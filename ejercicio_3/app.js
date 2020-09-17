@@ -1,17 +1,13 @@
-
 const obtenerPokemon = require("./library");
 
 // Codigo funcion callback
 
-function callback(datosPokemon) {
-    console.log("Nombre: " + datosPokemon.forms[0].name);
+function callback(dPokemon) {
+    console.log("Nombre: " + dPokemon.forms[0].name);
 
-    console.log("Habilidades: ");
+    dPokemon.abilities.forEach(habilidades => console.log(habilidades.ability.name));
     
-    datosPokemon.abilities.forEach
-    (ability => console.log(ability.ability.name));
 }
-
 
 // Fin codigo
 
