@@ -1,9 +1,8 @@
 const obtenerPersonaFake = require("./library");
 
 // Codigo funcion callback
-function callback(Persona) {
-    Persona.results.forEach(person=> {
-
+function callback(persona) {
+    persona.results.forEach(person=> {
         console.log("Nombre: " + person.name.first + " " + person.name.last);
         console.log("Genero: " + person.gender);
         console.log("Pais: " + person.location.country);
