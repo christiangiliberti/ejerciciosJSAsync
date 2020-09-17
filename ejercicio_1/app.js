@@ -2,9 +2,9 @@
 const obtenerChiste = require("./library");
 
 // Codigo funcion callback
-function callback(resultado) {
-    console.log(resultado[0].setup);
-    console.log(resultado[0].punchline);
+function callback(obj) {
+    console.log(obj[0].setup);
+    console.log(obj[0].punchline);
 }
 
 // Fin codigo
