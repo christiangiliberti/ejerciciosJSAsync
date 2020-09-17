@@ -5,7 +5,7 @@ const obtenerPokemon = require("./library");
 function callback(dPokemon) {
     console.log("Nombre: " + dPokemon.forms[0].name);
 
-    dPokemon.abilities.forEach(habilidades => console.log(habilidades.ability.name));
+    dPokemon.abilities.forEach(h => console.log(h.ability.name));
     
 }
 
